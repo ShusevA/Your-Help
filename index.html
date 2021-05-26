@@ -12,14 +12,15 @@
 </head>
 
 <body>
-    <header>
+    <header class="hats">
         <div class="contaner hat">
             <div><img src="imgs/Logo.png" alt="Logo"></div>
-            <div class="menu">
-                <div class="menu__block">
-                    <a href="#">Campaigns</a>
-                    <a href="#">Communities</a>
-                </div>
+            <button type="button" class="hamburger">&#9776;</button>
+            <nav class="menu">
+                <ul class="menu__block">
+                    <li><a href="#">Campaigns</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
                 <div class="menu__button">
                     <button class="menu__btn">About us</button>
                     <div class="menu__content">
@@ -30,15 +31,17 @@
                         <a href="#">Reviews</a>
                     </div>
                 </div>
-            </div>
-            <div class="search">
-                <button class="btn">
-                    <img src="imgs/search.png" alt="search">
-                </button>
-            </div>
-            <div class="btns">
-                <button class="btn">Sign in</button>
-                <button class="btn_affect">Sign up</button>
+            </nav>
+            <div class="search-block">
+                <div class="search">
+                    <button class="btn">
+                        <img src="imgs/search.png" alt="search">
+                    </button>
+                </div>
+                <div class="btns">
+                    <a class="btn">Sign in</a>
+                    <a class="btn_affect">Sign up</a>
+                </div>
             </div>
         </div>
     </header>
@@ -243,7 +246,7 @@
             <div class="us">
                 <h2 class="head-bus">About us</h2>
                 <div class="us__blog">
-                    <img src="./imgs/Rectangle5.jpg" alt="Rectangle blog">
+                    <img class="us-me" src="./imgs/Rectangle5.jpg" alt="Rectangle blog">
                     <div class="us__text">
                         <p>The website connects community organizations to their supporters who can make donations using
                             debit or credit card.</p>
@@ -329,61 +332,6 @@
 
     <section>
         <div class="contaner">
-            <div class="reviews">
-                <h2 class="head-bus">Reviews</h2>
-                <div class="reviews__block">
-                    <div class="reviews__hub">
-                        <img class="vector-left" src="./imgs/Left.png" alt="Vector left">
-                        <img class="vector-right" src="./imgs/Right.png" alt="Vector right">
-                        <div class="reviews__elems">
-                            <div class="reviews__el">
-                                <div class="reviews__el_photo">
-                                    <img class="reviews_img" src="./imgs/sofy.jpg" alt="Sofy">
-                                    <img class="reviews_ellipse" src="./imgs/Ellipse15.png" alt="Ellipse">
-                                    <div class="reviews_ball">5+</div>
-                                </div>
-                                <div class="reviews__el_text">
-                                    <div class="reviews_back"></div>
-                                    <div class="reviews__el_head">
-                                        <div class="reviews__el_line"></div>
-                                        <div class="reviews__el_name">Monica S.</div>
-                                    </div>
-                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
-                                        nephew’s
-                                        medical needs, and your customer service was so prompt and helpful.”</p>
-                                </div>
-                            </div>
-                            <div class="reviews__el">
-                                <div class="reviews__el_photo">
-                                    <img class="reviews_img" src="./imgs/irane.jpg" alt="Irane">
-                                    <img class="reviews_ellipse" src="./imgs/Ellipse16.png" alt="Ellipse">
-                                    <div class="reviews_ball">5+</div>
-                                </div>
-                                <div class="reviews__el_text">
-                                    <div class="reviews_back"></div>
-                                    <div class="reviews__el_head">
-                                        <div class="reviews__el_line"></div>
-                                        <div class="reviews__el_name">Monica S.</div>
-                                    </div>
-                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
-                                        nephew’s
-                                        medical needs, and your customer service was so prompt and helpful.”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reviewe__scroll">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="contaner">
             <div class="contact">
                 <a id="contact"></a>
                 <h2 class="head-bus">Contact Us</h2>
@@ -418,10 +366,10 @@
                         <img class="form-ellipse3" src="./imgs/Ellipse27.png" alt="Ellipse25">
                         <div class="forms__blocks">
                             <form action="#" method="post">
-                                <p class="form-name">Full name</p>
-                                <input class="input-name" type="text">
-                                <p class="form-text">Email</p>
-                                <input class="input-email" type="text">
+                                <label class="form-name" for="form-name">Full name</label><br>
+                                <input class="input-name" id="form-name" type="text"><br>
+                                <label class="form-text" for="form-email">Email</label><br>
+                                <input class="input-email" id="form-email" type="text">
                                 <p class="form-text">Your message</p>
                                 <textarea class="input-message" name="message" id="sms" cols="30" rows="10"
                                     placeholder="Write your message..."></textarea>
@@ -438,7 +386,7 @@
         <div class="ftr">
             <div class="ftr__block">
                 <img src="./imgs/Logo2.png" alt="LOGO">
-                <div class="ftr__rup">
+                <nav class="ftr__rup">
                     <ul>
                         <li><a href="#">FAQs</a></li>
                         <li><a href="#">Privacy</a></li>
@@ -455,15 +403,19 @@
                         <li><a href="#">Charitable foundation</a></li>
                         <li><a href="#">How it works</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <hr>
-            <p class="frh__itog">© 2020. «Your Help». Charitable foundation.</p>
+            <p class="frh__itog">© 2020. «Your Help». Charitable foundation. Developed Shusev A.S.</p>
         </div>
     </footer>
 
-    <script src="index.js"></script>
-    
+    <script>
+        $(document).on('click', ".hamburger",function(){
+	this.classList.toggle("active");
+});
+    </script>
+
 </body>
 
 </html>
