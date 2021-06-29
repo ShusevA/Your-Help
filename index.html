@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <title>Your help</title>
     <meta charset="utf-8">
+    <title>Your help</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header class="hats">
-        <div class="container hat">
-            <div><img src="imgs/Logo.png" alt="Logo"></div>
+        <div class="contaner hat">
+            <div><img src="imgs/logo.png" alt="Logo"></div>
             <button type="button" class="hamburger">&#9776;</button>
             <nav class="menu">
                 <ul class="menu__block">
@@ -34,71 +35,74 @@
             </nav>
             <div class="search-block">
                 <div class="search">
-                    <button class="btn">
-                        <img src="imgs/search.png" alt="search">
-                    </button>
+                    <div class="search-show">
+                        <div class="search-forms">
+                            <form action="#" method="get" class="search-form">
+                                <input type="search" name="search" placeholder="Search..." id="websiteOnSearch">
+                                <button type="submit" class="search-form-submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="search-ajax">
+                        <div class="search-icon">
+                            <i class="material-icons">search</i>
+                        </div>
+                    </div>
                 </div>
                 <div class="btns">
-                    <a class="btn">Sign in</a>
-                    <a class="btn_affect">Sign up</a>
+                    <a href="#0" class="btn">Sign in</a>
+                    <a href="#0" class="btn_affect">Sign up</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <div class="container fon">
-            <div class="fon__block">
-                <h1 class="fon__head">Charitable foundation «Your Help»</h1>
-                <h3 class="fon__text">People around the world are raising money for what they are passionate about.
+    <section>
+        <div class="contaner create">
+            <div class="create__block">
+                <h1 class="create__head">Charitable foundation «Your Help»</h1>
+                <h3 class="create__text">People around the world are raising money for what they are passionate about.
                 </h3>
                 <button class="btn_affect">Create a campaign</button>
             </div>
             <div class="scroll">
-                <div></div>
-                <div></div>
-                <div></div>
+                <button type="button" class="slide active"></button>
+                <button type="button" class="slide"></button>
+                <button type="button" class="slide"></button>
             </div>
+        </div>
+    </section>
+
+    <div>
+        <div class="contaner">
+            <ul class="categories">
+                <li>
+                    <a href="#" class="medical">Medical</a>
+                </li>
+                <li>
+                    <a href="#" class="sports">Sports</a>
+                </li>
+                <li>
+                    <a href="#" class="animals">Animals</a>
+                </li>
+                <li>
+                    <a href="#" class="business">Business</a>
+                </li>
+                <li>
+                    <a href="#" class="community">Community</a>
+                </li>
+                <li>
+                    <a href="#" class="family">Family</a>
+                </li>
+                <li>
+                    <a href="#" class="other-categories">Categories</a>
+                </li>
+            </ul>
         </div>
     </div>
 
-    <div>
-        <div class="container">
-            <div class="categories">
-                <div class="categories__elem elem1 btn">
-                    <img src="./imgs/Medical.png" alt="Medical">
-                    <p class="categories__text">Medical</p>
-                </div>
-                <div class="categories__elem elem2 btn">
-                    <img src="./imgs/Sports.png" alt="Sports">
-                    <p class="categories__text">Sports</p>
-                </div>
-                <div class="categories__elem elem3 btn">
-                    <img src="./imgs/Animals.png" alt="Animals">
-                    <p class="categories__text">Animals</p>
-                </div>
-                <div class="categories__elem elem4 btn">
-                    <img src="./imgs/Business.png" alt="Business">
-                    <p class="categories__text">Business</p>
-                </div>
-                <div class="categories__elem elem5 btn">
-                    <img src="./imgs/Community.png" alt="Community">
-                    <p class="categories__text">Community</p>
-                </div>
-                <div class="categories__elem elem6 btn">
-                    <img src="./imgs/Family.png" alt="Family">
-                    <p class="categories__text">Family</p>
-                </div>
-                <div class="categories__elem elem7 btn">
-                    <img src="./imgs/otherCategories.png" alt="Other categories">
-                    <p class="categories__text">other categories</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="container">
+    <section>
+        <div class="contaner">
             <div class="campaigns">
                 <div class="campaigns__hat">
                     <h2 class="campaigns__head head-bus">Campaigns</h2>
@@ -109,108 +113,97 @@
                     <p class="cards__top">Popular campaigns</p>
                     <div class="cards-all">
                         <div class="card">
-                            <div class="card_top">
-                                <img class="card__ellipse_top" src="./imgs/Ellipse.png" alt="Ellipse">
-                                <p class="efect">Social</p>
-                            </div>
-                            <img class="photo" src="./imgs/Rectangle.jpg" alt="Rectangle">
-                            <div class="card__block">
-                                <div class="card_botton">
-                                    <img src="./imgs/Ellipse2.png" alt="Ellipse">
-                                    <p class="efect">Animals</p>
+                            <a href="#" class="card-linck">
+                                <p class="card_top efect">Social</p>
+                                <img class="photo" src="./imgs/shelter-for-dogs.jpg"
+                                    alt="Construction of a shelter for dogs">
+                                <div class="card__block">
+                                    <p class="card_bottom efect">Animals</p>
+                                    <p class="card_text">Construction of a shelter for dogs</p>
+                                    <div class="card_price">
+                                        <p>$1,000.00 Raised</p>
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="card__scale">
+                                        <div class="card__scale_color"></div>
+                                    </div>
+                                    <p class="card__itog">Goal<span>$2,000.00</span></p>
                                 </div>
-                                <p class="card_text">Construction of a shelter for dogs</p>
-                                <div class="card_price">
-                                    <p>$1,000.00 Raised</p>
-                                    <p>50%</p>
-                                </div>
-                                <div class="card__scale">
-                                    <div class="card__scale_color"></div>
-                                </div>
-                                <p class="card__itog">Goal<span>$2,000.00</span></p>
-                            </div>
+                            </a>
                         </div>
                         <div class="card">
-                            <div class="card_top">
-                                <img class="card__ellipse_top" src="./imgs/Ellipse3.png" alt="Ellipse">
-                                <p class="efect">Education</p>
-                            </div>
-                            <img class="photo" src="./imgs/Rectangle2.jpg" alt="Rectangle">
-                            <div class="card__block">
-                                <div class="card_botton">
-                                    <img src="./imgs/Ellipse4.png" alt="Ellipse">
-                                    <p class="efect">Family</p>
+                            <a href="#" class="card-linck">
+                                <p class="card_top efect card-camp_top">Education</p>
+                                <img class="photo" src="./imgs/camp.jpg" alt="Help to save the camp">
+                                <div class="card__block">
+                                    <p class="card_botton efect card-camp_bottom">Family</p>
+                                    <p class="card_text">Help to save the camp</p>
+                                    <div class="card_price">
+                                        <p>$50.00 Raised</p>
+                                        <p>2%</p>
+                                    </div>
+                                    <div class="card__scale">
+                                        <div class="card__scale_color scale2"></div>
+                                    </div>
+                                    <p class="card__itog">Goal<span>$3,000.00</span></p>
                                 </div>
-                                <p class="card_text">Help to save the camp</p>
-                                <div class="card_price">
-                                    <p>$50.00 Raised</p>
-                                    <p>2%</p>
-                                </div>
-                                <div class="card__scale">
-                                    <div class="card__scale_color scale2"></div>
-                                </div>
-                                <p class="card__itog">Goal<span>$3,000.00</span></p>
-                            </div>
+                            </a>
                         </div>
                         <div class="card">
-                            <div class="card_top">
-                                <img class="card__ellipse_top" src="./imgs/Ellipse.png" alt="Ellipse">
-                                <p class="efect">Social</p>
-                            </div>
-                            <img class="photo" src="./imgs/Rectangle3.jpg" alt="Rectangle">
-                            <div class="card__block">
-                                <div class="card_botton">
-                                    <img src="./imgs/Ellipse4.png" alt="Ellipse">
-                                    <p class="efect">Community</p>
+                            <a href="#" class="card-linck">
+                                <p class="card_top efect card-port_top">Social</p>
+                                <img class="photo" src="./imgs/port-construction.jpg" alt="Port construction">
+                                <div class="card__block">
+                                    <p class="card_bottom efect card-port_bottom">Community</p>
+                                    <p class="card_text">Port construction</p>
+                                    <div class="card_price">
+                                        <p>$1,000.00 Raised</p>
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="card__scale">
+                                        <div class="card__scale_color"></div>
+                                    </div>
+                                    <p class="card__itog">Goal<span>$2,000.00</span></p>
                                 </div>
-                                <p class="card_text">Port construction</p>
-                                <div class="card_price">
-                                    <p>$1,000.00 Raised</p>
-                                    <p>50%</p>
-                                </div>
-                                <div class="card__scale">
-                                    <div class="card__scale_color"></div>
-                                </div>
-                                <p class="card__itog">Goal<span>$2,000.00</span></p>
-                            </div>
+                            </a>
                         </div>
                         <div class="card">
-                            <div class="card_top">
-                                <img class="card__ellipse_top" src="./imgs/Ellipse.png" alt="Ellipse">
-                                <p class="efect">Social</p>
-                            </div>
-                            <img class="photo" src="./imgs/Rectangle4.jpg" alt="Rectangle">
-                            <div class="card__block">
-                                <div class="card_botton">
-                                    <img src="./imgs/Ellipse5.png" alt="Ellipse">
-                                    <p class="efect">Family</p>
+                            <a href="#" class="card-linck">
+                                <p class="card_top efect card-help_top">Social</p>
+                                <img class="photo" src="./imgs/help.jpg" alt="Help to save the camp">
+                                <div class="card__block">
+                                    <p class="card_bottom efect card-help_bottom">Family</p>
+                                    <p class="card_text">Help to save the camp</p>
+                                    <div class="card_price">
+                                        <p>$50.00 Raised</p>
+                                        <p>2%</p>
+                                    </div>
+                                    <div class="card__scale">
+                                        <div class="card__scale_color scale2"></div>
+                                    </div>
+                                    <p class="card__itog">Goal<span>$3,000.00</span></p>
                                 </div>
-                                <p class="card_text">Help to save the camp</p>
-                                <div class="card_price">
-                                    <p>$50.00 Raised</p>
-                                    <p>2%</p>
-                                </div>
-                                <div class="card__scale">
-                                    <div class="card__scale_color scale2"></div>
-                                </div>
-                                <p class="card__itog">Goal<span>$3,000.00</span></p>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <p class="cards__botton">See more</p>
+                    <div class="cards__bottom">
+                        <a href="#" class="cards-more">See more</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <div class="container">
+    <section>
+        <div class="contaner">
             <div class="everything">
                 <h2 class="head-bus">We have everything you need</h2>
                 <div class="everything__all">
                     <div class="everything__block">
                         <p class="everything__head">Worldwide leader</p>
-                        <p class="everything__text">Whole world trusts us. We are reliable fundraising platform.</p>
+                        <p class="everything__text">Whole world trusts us. We are reliable fundraising platform. We help
+                            you mobilize supporters and grow your fundraising strategy across the globe with a
+                            multi-language & multi-currency platform</p>
                     </div>
                     <div class="everything__block">
                         <p class="everything__head">Simple setup</p>
@@ -219,7 +212,8 @@
                     <div class="everything__block">
                         <p class="everything__head">24/7 expert advice</p>
                         <p class="everything__text">Our best-in-class customer happiness agents will answer your
-                            questions, day or night.</p>
+                            questions, day or night. We offer a full range of solutions to help you build successful
+                            long-term relationships with your supporters</p>
                     </div>
                     <div class="everything__block">
                         <p class="everything__head">Mobile app</p>
@@ -229,97 +223,101 @@
                     <div class="everything__block">
                         <p class="everything__head">Social reach</p>
                         <p class="everything__text">Harness the power of social media to spread your story and get more
-                            support.</p>
+                            support. Whether your organisation is already international or exploring the possibility of
+                            expanding, we make the process easy and efficient for you to rally supporters globally.</p>
                     </div>
                     <div class="everything__block">
                         <p class="everything__head">Fast and secure</p>
-                        <p class="everything__text">Most organizers can withdraw funds immediately and our team works
-                            around the clock to protect against fraud.</p>
+                        <p class="everything__text">Most organizers can withdraw funds immediately and our team
+                            works
+                            around the clock to protect against fraud. Our platform is able to process 135
+                            currencies,
+                            23 different languages, and multiple local & international payment methods. With our
+                            integrated conversion system, you’ll be able to provide a cross-currency experience for
+                            your
+                            supporters, where you set goals in one currency, and can receive donations in another.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <div class="container">
+    <section>
+        <div class="contaner">
             <div class="us">
                 <h2 class="head-bus">About us</h2>
                 <div class="us__blog">
-                    <img class="us-me" src="./imgs/Rectangle5.jpg" alt="Rectangle blog">
-                    <div class="us__text">
-                        <p>The website connects community organizations to their supporters who can make donations using
-                            debit or credit card.</p>
-                        <img class="us__ball1" src="imgs/Ellipse6.png" alt="Ellipse">
-                        <img class="us__ball2" src="imgs/Ellipse7.png" alt="Ellipse">
-                        <img class="us__ball3" src="imgs/Ellipse8.png" alt="Ellipse">
+                    <div class="us-me"></div>
+                    <div class="us__text">The website connects community organizations to their supporters who can make
+                        donations using debit or credit card.
                     </div>
                 </div>
                 <div class="us__halps">
-                    <div class="ua__element">
+                    <div class="us__element">
                         <p>«Your Help» helps registered community organizations</p>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse10.png" alt="Ellipse">
+                                <img src="./imgs/ellipse10.png" alt>
                                 <div class="us__element_num">1</div>
                             </div>
                             <div class="us__element_text">Track donations received</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse11.png" alt="Ellipse">
+                                <img src="./imgs/ellipse11.png" alt>
                                 <div class="us__element_num">2</div>
                             </div>
                             <div class="us__element_text">Reward/recognize donors</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse12.png" alt="Ellipse">
+                                <img src="./imgs/ellipse12.png" alt>
                                 <div class="us__element_num">3</div>
                             </div>
                             <div class="us__element_text">Transparency and accountability</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse13.png" alt="Ellipse">
+                                <img src="./imgs/ellipse13.png" alt>
                                 <div class="us__element_num">4</div>
                             </div>
                             <div class="us__element_text">Annual reporting</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse14.png" alt="Ellipse">
+                                <img src="./imgs/ellipse14.png" alt>
                                 <div class="us__element_num">5</div>
                             </div>
                             <div class="us__element_text">Global platform</div>
                         </div>
                     </div>
-                    <div class="ua__element">
+                    <div class="us__element">
                         <p>«Your Help» helps supporters</p>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse10.png" alt="Ellipse">
+                                <img src="./imgs/ellipse10.png" alt>
                                 <div class="us__element_num">1</div>
                             </div>
                             <div class="us__element_text">Make cashless donations</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse11.png" alt="Ellipse">
+                                <img src="./imgs/ellipse11.png" alt>
                                 <div class="us__element_num">2</div>
                             </div>
                             <div class="us__element_text">Track your donations</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse12.png" alt="Ellipse">
+                                <img src="./imgs/ellipse12.png" alt>
                                 <div class="us__element_num">3</div>
                             </div>
                             <div class="us__element_text">Stay connected</div>
                         </div>
                         <div class="us__element_block">
                             <div class="us__element_all">
-                                <img src="./imgs/Ellipse13.png" alt="Ellipse">
+                                <img src="./imgs/ellipse13.png" alt>
                                 <div class="us__element_num">4</div>
                             </div>
                             <div class="us__element_text">Collaborate</div>
@@ -328,51 +326,171 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <div class="container">
+    <section>
+        <div class="contaner">
+            <div class="reviews">
+                <h2 class="head-bus">Reviews</h2>
+                <div class="reviews__hub">
+                    <div class="reviews__elems">
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/sofy.jpg" alt="Sofy">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse15.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/irane.jpg" alt="Irane">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse16.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/pit.jpg" alt="">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse15.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/areec.jpg" alt="">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse16.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/kent.jpg" alt="">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse15.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-inline">
+                            <div class="reviews__el">
+                                <div class="reviews__el_photo">
+                                    <img class="reviews_img" src="./imgs/boy.jpg" alt="">
+                                    <img class="reviews_ellipse" src="./imgs/Ellipse16.png" alt>
+                                    <div class="reviews_ball">5+</div>
+                                </div>
+                                <div class="reviews__el_text">
+                                    <div class="reviews__el_name">Monica S.</div>
+                                    <p>“This website rocks! I raised close to $10,000 in less than 48 hours for my
+                                        nephew’s
+                                        medical needs, and your customer service was so prompt and helpful.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rewiew__nav">
+                        <div class="vector-left"></div>
+                        <div class="vector-right"></div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <button type="button" class="slide active"></button>
+                    <button type="button" class="slide"></button>
+                    <button type="button" class="slide"></button>
+                    <button type="button" class="slide"></button>
+                    <button type="button" class="slide"></button>
+                    <button type="button" class="slide"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contaner">
             <div class="contact">
                 <a id="contact"></a>
                 <h2 class="head-bus">Contact Us</h2>
                 <h3 class="contact__head">Just write us a message!</h3>
                 <div class="contact__block">
                     <div class="contact__info">
-                        <img class="contact__ellipst1" src="./imgs/Ellipse20.png" alt="Ellipse">
-                        <img class="contact__ellipst2" src="./imgs/Ellipse21.png" alt="Ellipse">
-                        <img class="contact__ellipst3" src="./imgs/Ellipse22.png" alt="Ellipse">
                         <div class="contact__all">
                             <p class="contact__all_head">Contact information</p>
                             <p class="contact__all_text">Fill in the form and our team will get back to you within 24
                                 hours.</p>
                             <div class="contact__all_elem">
-                                <img src="./imgs/Mail.png" alt="Mail">
-                                <p>charitablefoundation@gmail.com</p>
+                                <a class="contact__all_mail"
+                                    href="mailto:charitablefoundation@gmail.com">charitablefoundation@gmail.com</a>
                             </div>
                             <div class="contact__all_elem">
-                                <img src="./imgs/Geo.png" alt="Geo">
-                                <p>«Your Help»  st. Piraeus 2C 04-49 Warsaw, Poland</p>
+                                <a class="contact__all_geo" href="#">«Your Help»  st. Piraeus 2C 04-49 Warsaw,
+                                    Poland</a>
                             </div>
-                            <div class="contact__web">
-                                <a href="#"><img src="./imgs/LinkedIN.png" alt="LinkedIN"></a>
-                                <a href="#"><img src="./imgs/Facebook.png" alt="Facebook"></a>
-                                <a href="#"><img src="./imgs/VK.png" alt="VK"></a>
-                            </div>
+                            <ul class="contact__web">
+                                <li>
+                                    <a href="#" class="linked">LinkedIN</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="facebook">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="vk">VK</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="contact__form">
-                        <img class="form-ellipse1" src="./imgs/Ellipse25.png" alt="Ellipse25">
-                        <img class="form-ellipse2" src="./imgs/Ellipse26.png" alt="Ellipse25">
-                        <img class="form-ellipse3" src="./imgs/Ellipse27.png" alt="Ellipse25">
                         <div class="forms__blocks">
                             <form action="#" method="post">
-                                <label class="form-name" for="form-name">Full name</label><br>
-                                <input class="input-name" id="form-name" type="text"><br>
-                                <label class="form-text" for="form-email">Email</label><br>
-                                <input class="input-email" id="form-email" type="text">
-                                <p class="form-text">Your message</p>
-                                <textarea class="input-message" name="message" id="sms" cols="30" rows="10"
-                                    placeholder="Write your message..."></textarea>
+                                <div class="input-block">
+                                    <input class="input-name" id="form-name" type="text">
+                                    <label class="form-name" for="form-name">Full name</label>
+                                </div>
+                                <div class="input-block">
+                                    <input class="input-email" id="form-email" type="text">
+                                    <label class="form-text" for="form-email">Email</label>
+                                </div>
+                                <div class="input-block">
+                                    <textarea class="input-message" name="message" id="form-textarea" cols="30"
+                                        rows="10" placeholder="Write your message..."></textarea>
+                                    <label class="form-textarea">Your message</label>
+                                </div>
                                 <button class="btn_affect" type="submit">Send message</button>
                             </form>
                         </div>
@@ -380,13 +498,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="ftr">
-            <div class="ftr__block">
-                <img src="./imgs/Logo2.png" alt="LOGO">
-                <nav class="ftr__rup">
+        <div class="down">
+            <div class="down__block">
+                <img src="./imgs/logo-down.png" alt="Logo">
+                <nav class="down__rup">
                     <ul>
                         <li><a href="#">FAQs</a></li>
                         <li><a href="#">Privacy</a></li>
@@ -406,19 +524,15 @@
                 </nav>
             </div>
             <hr>
-            <p class="frh__itog">© 2020. «Your Help». Charitable foundation. Developed Shusev A.S.</p>
+            <p class="down__itog">© 2020. «Your Help». Charitable foundation. Developed Shusev A.S.</p>
         </div>
     </footer>
 
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
 
-    <script>
-        $(document).on('click', ".hamburger",function(){
-	this.classList.toggle("active");
-});
-    </script>
+    <script src="./app.js"></script>
 
 </body>
 
