@@ -916,7 +916,7 @@ li {
 }
 
 .vector-left::before {
-    content: url(./imgs/Left.png);
+    content: url(./imgs/left.png);
     cursor: pointer;
     left: 0;
     position: absolute;
