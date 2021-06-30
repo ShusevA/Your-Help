@@ -830,7 +830,7 @@ li {
 }
 
 .reviews_ellipse {
-    bottom: 12px;
+    bottom: 1.848vh;
     height: 12.936vh;
     position: absolute;
     right: 0;
@@ -839,7 +839,7 @@ li {
 }
 
 .reviews_ball {
-    bottom: 32px;
+    bottom: 4.928vh;
     color: #000000;
     font: inherit;
     font-style: normal;
@@ -853,11 +853,11 @@ li {
 }
 
 .reviews_img {
+    bottom: 12.474vh;
     border-radius: 50%;
     height: 15.4vh;
     position: absolute;
     right: 11px;
-    top: 39px;
     width: 7.8vw;
     z-index: 5;
 }
@@ -877,12 +877,11 @@ li {
     border-radius: 50%;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.993);
     content: "";
-    height: 22px;
-    left: -105px;
+    height: 27.5vh;
+    left: -21px;
     position: absolute;
-    transform: rotate(90deg);
-    top: 75px;
-    width: 185px;
+    top: 0;
+    width: 22px;
 }
 
 .reviews__el_name::before {
